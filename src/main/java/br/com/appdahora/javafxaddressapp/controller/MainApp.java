@@ -3,11 +3,14 @@ import java.io.IOException;
 
 import br.com.appdahora.javafxaddressapp.model.Person;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.stage.Stage;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 
 public class MainApp extends Application {
+    private ObservableList<Person> personData = FXCollections.observableArrayList();
     public MainApp() {
 // Insira dados de exemplo
         personData.add(new Person("Maia", "Nogueira"));
