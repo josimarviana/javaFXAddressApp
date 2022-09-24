@@ -1,7 +1,8 @@
-package br.com.appdahora.javafxaddressapp.controller;
+package br.com.appdahora.javafxaddressapp;
 import java.io.IOException;
 
 import br.com.appdahora.javafxaddressapp.model.Person;
+import br.com.appdahora.javafxaddressapp.view.PersonOverviewController;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

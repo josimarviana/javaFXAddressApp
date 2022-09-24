@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd61906f-c42f-4a21-a699-6cc565b67b3c" name="Changes" comment="inserindo PersonOverview.fxml e PersonOverviewController.java">
+    <list default="true" id="fd61906f-c42f-4a21-a699-6cc565b67b3c" name="Changes" comment="ajustes na Main">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/appdahora/javafxaddressapp/address/util/DateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/appdahora/javafxaddressapp/controller/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/appdahora/javafxaddressapp/controller/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/appdahora/javafxaddressapp/controller/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/appdahora/javafxaddressapp/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/appdahora/javafxaddressapp/controller/PersonOverviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/appdahora/javafxaddressapp/view/PersonOverviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/br/com/appdahora/javafxaddressapp/PersonOverview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/br/com/appdahora/javafxaddressapp/view/PersonOverview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/br/com/appdahora/javafxaddressapp/RootLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/br/com/appdahora/javafxaddressapp/view/RootLayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/br/com/appdahora/javafxaddressapp/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,21 +40,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/home/josimar/Área de Trabalho/javaFX/javaFXAddressApp/src/main/java/br/com/appdahora/javafxaddressapp&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "/home/josimar/Área de Trabalho/javaFX/javaFXAddressApp/src/main/java/br/com/appdahora/javafxaddressapp",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/br/com/appdahora/javafxaddressapp/view" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.appdahora.javafxaddressapp" />
+      <recent name="br.com.appdahora.javafxaddressapp.view" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.appdahora.javafxaddressapp.controller.MainApp" />
+      <option name="MAIN_CLASS_NAME" value="br.com.appdahora.javafxaddressapp.MainApp" />
       <module name="javaFXAddressApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.appdahora.javafxaddressapp.controller.*" />
+          <option name="PATTERN" value="br.com.appdahora.javafxaddressapp.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663967691877</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ajustes na Main">
+      <created>1663969480020</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663969480020</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,14 +134,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="inserindo PersonOverview.fxml e PersonOverviewController.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserindo PersonOverview.fxml e PersonOverviewController.java" />
+    <MESSAGE value="ajustes na Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes na Main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/appdahora/javafxaddressapp/controller/MainApp.java</url>
-          <line>47</line>
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/appdahora/javafxaddressapp/MainApp.java</url>
+          <line>48</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

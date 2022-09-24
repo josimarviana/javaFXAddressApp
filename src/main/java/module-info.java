@@ -9,6 +9,6 @@ module br.com.appdahora.javafxaddressapp {
     exports br.com.appdahora.javafxaddressapp;
     exports br.com.appdahora.javafxaddressapp.model;
     opens br.com.appdahora.javafxaddressapp.model to javafx.fxml;
-    exports br.com.appdahora.javafxaddressapp.controller;
-    opens br.com.appdahora.javafxaddressapp.controller to javafx.fxml;
+    exports br.com.appdahora.javafxaddressapp.view;
+    opens br.com.appdahora.javafxaddressapp.view to javafx.fxml;
 }
