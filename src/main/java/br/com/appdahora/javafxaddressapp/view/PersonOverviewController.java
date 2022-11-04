@@ -1,6 +1,7 @@
 package br.com.appdahora.javafxaddressapp.view;
 import br.com.appdahora.javafxaddressapp.address.util.DateUtil;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -40,6 +41,52 @@ public class PersonOverviewController {
      * Inicializa a classe controller. Este método é chamado automaticamente
      *  após o arquivo fxml ter sido carregado.
      */
+
+    @FXML
+    private void handleNewPerson() {
+        Person tempPerson = new Person();
+        boolean okClicked = mainApp.showPersonEditDialog(tempPerson);
+        if (okClicked) {
+            mainApp.getPersonData().add(tempPerson);
+        }
+    }
+
+    @FXML
+    private void handleEditPerson() {
+        Person selectedPerson = personTable.getSelectionModel().getSelectedItem();
+        if (selectedPerson != null) {
+            boolean okClicked = mainApp.showPersonEditDialog(selectedPerson);
+            if (okClicked) {
+                showPersonDetails(selectedPerson);
+            }
+
+        } else {
+            // Nada seleciondo.
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Nenhuma seleção");
+            alert.setHeaderText("Nenhuma Pessoa Selecionada");
+            alert.setContentText("Por favor, selecione uma pessoa na tabela.");
+            alert.showAndWait();
+        }
+    }
+
+    @FXML
+    private void handleDeletePerson() {
+        int selectedIndex = personTable.getSelectionModel().getSelectedIndex();
+        if (selectedIndex >= 0) {
+            personTable.getItems().remove(selectedIndex);
+        } else {
+            // Nada selecionado.
+
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Nenhuma seleção");
+            alert.setHeaderText("Nenhuma Pessoa Selecionada");
+            alert.setContentText("Por favor, selecione uma pessoa na tabela.");
+
+            alert.showAndWait();
+        }
+    }
+
     @FXML
     private void initialize() {
         // Inicializa a tabela de pessoas com duas colunas.
@@ -94,4 +141,6 @@ public class PersonOverviewController {
             birthdayLabel.setText("");
         }
     }
+
+
 }
